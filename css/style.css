@@ -146,6 +146,41 @@ body{
   margin: 150px auto;
 }
 
+
+/*------------------------------------*/
+/* Explore our Collections */
+
+.assortment__title{
+  text-align: center;
+  font-family: 'Cormorant';
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+  margin-bottom: 60px;
+}
+
+.assortment__list{
+  display: flex;
+  gap: 0 40px;
+  margin-bottom: 150px;
+}
+
+.assortment__img{
+  width: 100%;
+  max-width: 208px;
+  max-height: 208px;
+  margin-bottom: 10px;
+}
+
+.assotment__name{
+  text-align: center;
+  font-family: 'Cormorant';
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+}
+
+
 @media (max-width: 1000px){
   .user-actions__item-search{
     margin-left: 30px;
@@ -165,6 +200,13 @@ body{
   .blockquote__text{
     margin-top: 120px;
     margin-bottom: 135px;
+  }
+  .assortment__list{
+    gap: 0;
+    margin-bottom: 120px;
+  }
+  .assortment__title{
+    margin-bottom: 30px;
   }
 }
 
@@ -186,7 +228,6 @@ body{
   .menu__close{
     display: block;
   }
-  
   .menu__list{
     display: block;
     text-align: center;
@@ -242,6 +283,11 @@ body{
   .blockquote__text{
     max-width: 540px;
   }
+  .assortment__list{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
 }
 
 @media (max-width: 480px){
@@ -272,6 +318,13 @@ body{
   .menu__list{
     width: 360px;
   }
+  .assortment__list{
+    margin-bottom: 60px;
+  }
+  .assortment__img{
+    max-width: 170px;
+    max-height: 170px;
+  }
 }
 
 @media (max-width: 360px){
@@ -298,5 +351,10 @@ body{
   }
   .mobile-actions{
     padding: 0 40px;
+  }
+  .assortment__title{
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 0;
   }
 }
