@@ -34,6 +34,14 @@ body{
   padding-right: 20px;
 }
 
+.title{
+  text-align: center;
+  font-family: 'Cormorant';
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+}
+
 .header__inner{
   display: flex;
   justify-content: space-between;
@@ -151,11 +159,6 @@ body{
 /* Explore our Collections */
 
 .assortment__title{
-  text-align: center;
-  font-family: 'Cormorant';
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 48px;
   margin-bottom: 60px;
 }
 
@@ -180,6 +183,44 @@ body{
   line-height: 29px;
 }
 
+/*------------------------------------*/
+/* What our Clients say */
+
+.reviews{
+  background-color: #F7F2EA;
+  padding: 60px 0;
+  margin-bottom: 150px;
+}
+
+.reviews__title{
+  margin-bottom: 60px;
+}
+
+.reviews__list{
+  display: flex;
+  gap: 0 26px;
+}
+
+.reviews__item{
+  max-width: 280px;
+  font-family: 'Open Sans';
+}
+
+.reviews__text{
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+
+.reviews__name{
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
+}
+
 
 @media (max-width: 1000px){
   .user-actions__item-search{
@@ -201,12 +242,25 @@ body{
     margin-top: 120px;
     margin-bottom: 135px;
   }
+  /*------------------------------------*/
+  /* Explore our Collections */
   .assortment__list{
     gap: 0;
     margin-bottom: 120px;
   }
   .assortment__title{
     margin-bottom: 30px;
+  }
+  /*------------------------------------*/
+  /* What our Clients say */
+  .reviews{
+    margin-bottom: 120px;
+  }
+  .reviews__item:last-child{
+    display: none;
+  }
+  .reviews__list{
+    justify-content: center;
   }
 }
 
@@ -283,11 +337,21 @@ body{
   .blockquote__text{
     max-width: 540px;
   }
+  /*------------------------------------*/
+  /* Explore our Collections */
   .assortment__list{
     flex-wrap: wrap;
     justify-content: center;
   }
-
+  /*------------------------------------*/
+  /* What our Clients say */
+  .reviews__item:last-child{
+    display: block;
+  }
+  .reviews__list{
+    flex-wrap: wrap;
+    gap: 30px 76px;
+  }
 }
 
 @media (max-width: 480px){
@@ -318,12 +382,30 @@ body{
   .menu__list{
     width: 360px;
   }
+  /*------------------------------------*/
+  /* Explore our Collections */
   .assortment__list{
     margin-bottom: 60px;
   }
   .assortment__img{
     max-width: 170px;
     max-height: 170px;
+  }
+  /*------------------------------------*/
+  /* What our Clients say */
+  .reviews{
+    padding: 50px 0;
+    margin-bottom: 60px;
+  }
+  .reviews__title{
+    margin-bottom: 50px;
+  }
+  .reviews__list{
+    flex-wrap: wrap;
+    gap: 30px 20px;
+  }
+  .reviews__item{
+    max-width: 220px;
   }
 }
 
@@ -352,9 +434,33 @@ body{
   .mobile-actions{
     padding: 0 40px;
   }
-  .assortment__title{
+  /*------------------------------------*/
+  /* Explore our Collections */
+  .title{
     font-size: 24px;
     line-height: 29px;
+  }
+  .assortment__title{
     margin-bottom: 0;
+  }
+  /*------------------------------------*/
+  /* What our Clients say */
+  .reviews{
+    margin-bottom: 50px;
+  }
+  .reviews__title{
+    margin-bottom: 30px;
+  }
+  .title{
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .reviews__item:last-child,
+  .reviews__item:first-child
+  {
+    display: none;
+  }
+  .reviews__item{
+    max-width: 340px;
   }
 }
