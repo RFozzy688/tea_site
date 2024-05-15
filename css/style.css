@@ -292,9 +292,133 @@ body {
   line-height: 18px;
 }
 
-.our-blog__item-author{
-  flex: 1 0 auto;
+.our-blog__item-link{
+  margin-top: auto;
 }
+
+/*------------------------------------*/
+/* Want to know more */
+
+.know-more{
+  background-color: #F7F2EA;
+  margin-bottom: 150px;
+
+  /* max-height: 418px; */
+  background-image: url(../images/tea_1.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+  padding: 100px 0;
+}
+
+/* .know-more__bg{
+  width: 674px;
+  height: 418px;
+  background-image: url(../images/tea_1.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+} */
+
+.know-more__title{
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.know-more__content{
+  display: flex;
+  justify-content: space-between;
+  gap: 60px 40px;
+}
+
+.know-more__description{
+  width: 580px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 150%;
+}
+
+.know-more__form{
+  display: flex;
+  flex-direction: column;
+  width: 580px;
+}
+
+.know-more__box-top{
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.know-more__box-down{
+  display: flex;
+  align-items: flex-start;
+}
+
+.know-more__form-email{
+  width: 440px;
+  border: none;
+  border-bottom: 1px solid #B8B58B;
+  background-color: transparent;
+  padding: 3px 15px;
+  margin-right: 25px;
+}
+
+.know-more__form-email::placeholder{
+  font-family: 'Open Sans', sans-serif;
+  color: #B8B58B;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 150%;
+}
+
+.checkbox__text{
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 18px;
+  margin-left: 10px;
+}
+
+/*------------------------------------*/
+/* We Prioritise */
+
+.prioritise{
+  margin-bottom: 150px;
+}
+
+.prioritise__title{
+  margin-bottom: 60px;
+}
+
+.prioritise__list{
+  display: flex;
+  justify-content: space-between;
+  gap: 0 40px;
+}
+
+.prioritise__item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prioritise__name{
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 41px;
+  margin-bottom: 10px;
+}
+
+.prioritise__description{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
+  margin-bottom: 40px;
+}
+
+.prioritise__img{
+  margin-top: auto;
+}
+
 
 @media (max-width: 1000px) {
   .user-actions__item-search {
