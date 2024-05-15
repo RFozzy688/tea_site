@@ -255,14 +255,15 @@ body {
 
 .our-blog__list{
   display: flex;
-  gap: 40px 58px;
+  justify-content: space-between;
+  gap: 40px 20px;
   flex-wrap: wrap;
   margin-bottom: 60px;
 }
 
 .our-blog__item{
   display: flex;
-  max-width: 542px;
+  width: 542px;
 }
 
 .our-blog__item-img{
@@ -302,23 +303,12 @@ body {
 .know-more{
   background-color: #F7F2EA;
   margin-bottom: 150px;
-
-  /* max-height: 418px; */
   background-image: url(../images/tea_1.png);
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: contain;
   padding: 100px 0;
 }
-
-/* .know-more__bg{
-  width: 674px;
-  height: 418px;
-  background-image: url(../images/tea_1.png);
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: contain;
-} */
 
 .know-more__title{
   margin-bottom: 50px;
@@ -396,9 +386,12 @@ body {
 }
 
 .prioritise__item{
+  width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .prioritise__name{
@@ -419,6 +412,26 @@ body {
   margin-top: auto;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1150px){
+  .our-blog__item{
+    width: 460px;
+  }
+}
 
 @media (max-width: 1000px) {
   .user-actions__item-search {
@@ -452,7 +465,6 @@ body {
     gap: 0;
     margin-bottom: 120px;
   }
-
   .assortment__title {
     margin-bottom: 30px;
   }
@@ -462,13 +474,43 @@ body {
   .reviews {
     margin-bottom: 120px;
   }
-
   .reviews__item:last-child {
     display: none;
   }
-
   .reviews__list {
     justify-content: center;
+  }
+
+  /*------------------------------------*/
+  /* Our Tea Blog */
+  .our-blog__item-img{
+    max-width: 230px;
+    max-height: 153px;
+  }
+
+  /*------------------------------------*/
+  /* Want to know more */
+  .know-more{
+    padding: 60px 0;
+  }
+  .know-more__title{
+    text-align: center;
+  }
+  .know-more__content{
+    flex-direction: column;
+    align-items: center;
+  }
+  .know-more__description{
+    width: 780px;
+    text-align: center;
+  }
+
+  /*------------------------------------*/
+  /* We Prioritise */
+  .prioritise__list{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* gap: 30px 100px; */
   }
 }
 
@@ -487,12 +529,10 @@ body {
   .menu__btn {
     display: flex;
   }
-
   .mobile-nav,
   .menu__close {
     display: block;
   }
-
   .menu__list {
     display: block;
     text-align: center;
@@ -509,32 +549,26 @@ body {
     padding-top: 60px;
     z-index: 3;
   }
-
   .menu__list.menu__list--open {
     transform: translateY(0%);
   }
-
   .menu__close-btn {
     position: absolute;
     top: 20px;
     right: 20px;
   }
-
   .menu__item {
     font-size: 24px;
     margin-bottom: 30px;
   }
-
   .mobile-menu {
     margin: 60px 30px;
     padding-top: 60px;
     border-top: 2px solid #F7F2EA;
   }
-
   .mobile-menu__item {
     margin-bottom: 35px;
   }
-
   .mobile-actions {
     height: 60px;
     display: flex;
@@ -543,17 +577,14 @@ body {
     padding: 0 80px;
     background-color: #F7F2EA;
   }
-
   .menu {
     order: -1;
     margin: 0;
   }
-
   .header__inner {
     padding-left: 65px;
     padding-right: 65px;
   }
-
   .blockquote__text {
     max-width: 540px;
   }
@@ -570,10 +601,27 @@ body {
   .reviews__item:last-child {
     display: block;
   }
-
   .reviews__list {
     flex-wrap: wrap;
     gap: 30px 76px;
+  }
+
+  /*------------------------------------*/
+  /* Our Tea Blog */
+  .our-blog__list{
+    gap: 30px 0;
+  }
+  .our-blog__item:nth-child(even){
+    margin-left: 98px;
+  }
+
+  /*------------------------------------*/
+  /* Want to know more */
+  .know-more__description{
+    width: 100%;
+  }
+  .know-more__form{
+    width: 100%;
   }
 }
 
@@ -582,17 +630,14 @@ body {
     padding-left: 9px;
     padding-right: 9px;
   }
-
   .header__inner {
     height: 56px;
     padding: 10px 0;
   }
-
   .top__title {
     font-size: 40px;
     line-height: 48px;
   }
-
   .blockquote__text {
     max-width: 376px;
     font-size: 16px;
@@ -601,12 +646,10 @@ body {
     margin-bottom: 60px;
     margin-top: 60px;
   }
-
   .logo img {
     width: 56px;
     height: 39px;
   }
-
   .menu__list {
     width: 360px;
   }
@@ -616,7 +659,6 @@ body {
   .assortment__list {
     margin-bottom: 60px;
   }
-
   .assortment__img {
     max-width: 170px;
     max-height: 170px;
@@ -628,18 +670,50 @@ body {
     padding: 50px 0;
     margin-bottom: 60px;
   }
-
   .reviews__title {
     margin-bottom: 50px;
   }
-
   .reviews__list {
     flex-wrap: wrap;
     gap: 30px 20px;
   }
-
   .reviews__item {
     max-width: 220px;
+  }
+
+  /*------------------------------------*/
+  /* Our Tea Blog */
+  .our-blog{
+    margin-bottom: 60px;
+  }
+  .our-blog__item:nth-child(even){
+    margin-left: 0;
+  }
+
+  /*------------------------------------*/
+  /* Want to know more */
+  .know-more{
+    margin-bottom: 60px;
+  }
+  .know-more__title{
+    margin-bottom: 30px;
+  }
+  .know-more__description{
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 18px;
+  }
+
+  /*------------------------------------*/
+  /* We Prioritise */
+  .prioritise{
+    margin-bottom: 60px;
+  }
+  .prioritise__item{
+    margin-bottom: 50px;
+  }
+  .prioritise__title{
+    margin-bottom: 30px;
   }
 }
 
@@ -647,30 +721,24 @@ body {
   .user-actions__item-search {
     margin-left: 0;
   }
-
   .top__title {
     font-size: 24px;
     line-height: 29px;
   }
-
   .top__text {
     font-size: 13px;
     font-weight: 300;
     line-height: 18px;
   }
-
   .blockquote__text {
     max-width: 340px;
   }
-
   .top__inner {
     min-height: 360px;
   }
-
   .menu__list {
     width: 255px;
   }
-
   .mobile-actions {
     padding: 0 40px;
   }
@@ -681,7 +749,6 @@ body {
     font-size: 24px;
     line-height: 29px;
   }
-
   .assortment__title {
     margin-bottom: 0;
   }
@@ -708,8 +775,37 @@ body {
 
   /*------------------------------------*/
   /* Our Tea Blog */
-
+  .our-blog__list{
+    flex-direction: column;
+    align-items: center;
+    /* gap: 30px 0; */
+  }
   .our-blog__title{
     margin-bottom: 30px;
+  }
+  .our-blog__item:last-child,
+  .our-blog__item:first-child{
+    display: none;
+  }
+  .our-blog__item{
+    width: 230px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .our-blog__item-img{
+    margin-right: 0;
+  }
+
+  /*------------------------------------*/
+  /* We Prioritise */
+  .prioritise__name{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 150%;
+  }
+  .prioritise__description{
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
   }
 }
